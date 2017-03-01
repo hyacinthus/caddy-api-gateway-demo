@@ -1,0 +1,18 @@
+version: '3'
+services:
+    app:
+        image: caddydemo-app
+        ports:
+            - 12345:12345
+        deploy:
+            replicas: 3
+    gateway:
+        image: caddydemo-gateway
+        ports:
+            - 2015:2015
+        depends_on:
+            - app
+        deploy:
+            replicas: 1
+            placement:
+                constraints: [node.role == manager]
