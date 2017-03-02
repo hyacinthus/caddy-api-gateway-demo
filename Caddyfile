@@ -1,3 +1,5 @@
 :2015 {
-    proxy / app:12345
+    proxy / app:12345 {
+        keepalive 0
+    }
 }
