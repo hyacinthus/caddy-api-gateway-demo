@@ -1,13 +1,11 @@
 version: '3'
 services:
     app:
-        image: caddydemo-app
-        ports:
-            - 12345:12345
+        image: muninn/caddy-microservice:app
         deploy:
             replicas: 3
     gateway:
-        image: caddydemo-gateway
+        image: muninn/caddy-microservice:gateway
         ports:
             - 2015:2015
         depends_on:
