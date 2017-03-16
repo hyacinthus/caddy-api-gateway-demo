@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -11,7 +10,7 @@ import (
 // HelloServer the web server
 func HelloServer(w http.ResponseWriter, req *http.Request) {
 	hostname, _ := os.Hostname()
-	fmt.Print("Hello, world! I am " + hostname + " :)\n")
+	log.Print("Hello, world! I am " + hostname + " :)\n")
 	io.WriteString(w, "Hello, world! I am "+hostname+" :)\n")
 }
 

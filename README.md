@@ -24,7 +24,7 @@ docker stack deploy -c docker-compose.yml caddy
 Because of caddy's proxy connection reuse feature, you can't test this demo by 
 visit http://{your-host-ip}:2015  in your browser.
 I write a client to send concurrent requests.  
-If you have go env, 
+If you have golang develop env, 
 ```bash
 cd client
 go run main.go
