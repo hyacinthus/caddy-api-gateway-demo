@@ -10,8 +10,8 @@ import (
 // HelloServer the web server
 func HelloServer(w http.ResponseWriter, req *http.Request) {
 	hostname, _ := os.Hostname()
-	log.Print("Hello, world! I am " + hostname + " :)\n")
-	io.WriteString(w, "Hello, world! I am "+hostname+" :)\n")
+	log.Println(hostname)
+	io.WriteString(w, "Hello, world! I am "+hostname+" .")
 }
 
 func main() {
