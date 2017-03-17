@@ -1,6 +1,8 @@
 # Caddy API gateway demo
 Use caddy as microservice API gateway in docker swarm.
 
+[![Build Status](https://semaphoreci.com/api/v1/muninn/caddy-api-gateway-demo/branches/master/shields_badge.svg)](https://semaphoreci.com/muninn/caddy-api-gateway-demo)
+
 ## Requirements
 * Docker Engine 1.13+
 * docker-compose 1.11.2+
